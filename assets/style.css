@@ -1,0 +1,246 @@
+/* ====== GLOBAL ====== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    background: #2b2d31;
+    color: #f3f3f3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ====== INDEX PAGE ====== */
+.index-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background: #313338;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+body.index-bg {
+    background: #2b2d31;
+}
+
+/* ====== DASHBOARD BOX ====== */
+.dashboard-wrapper {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0 35px 0;
+}
+
+.dash-box {
+    flex: 1;
+    padding: 22px 26px;
+    background: #3a3c43;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.dash-box:hover {
+    transform: scale(1.03);
+    background: #44464e;
+}
+
+.dash-box.active {
+    transform: scale(1.06);
+    background: #50525a;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.45);
+}
+
+.dash-title {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.75;
+}
+
+.dash-value {
+    margin: 5px 0 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Warna sesuai permintaan */
+.masuk { color: #58a6ff; }  /* biru */
+.keluar { color: #ff6b6b; } /* merah */
+.total { color: #ffffff; font-size: 26px; }
+
+/* ====== TABLE ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #3a3c43;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+th {
+    background: #4a73ff;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #46484f;
+    color: #ededed;
+}
+
+tr:hover {
+    background: #4a4c54;
+}
+
+td.aksi {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* ====== BUTTON: Tambah ====== */
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    background: #4a73ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 15px 0;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.35);
+}
+
+.btn:hover {
+    background: #6389ff;
+}
+
+/* ====== BUTTON EDIT & HAPUS ====== */
+.btn-action {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+/* EDIT */
+.btn-edit {
+    background: #3ba55d;
+    color: white;
+}
+.btn-edit:hover {
+    background: #2d8a4a;
+}
+
+/* HAPUS */
+.btn-hapus {
+    background: #d83c3e;
+    color: white;
+}
+.btn-hapus:hover {
+    background: #b93335;
+}
+
+/* ====== FORM PAGE ====== */
+body.form-bg {
+    margin: 0;
+    padding: 0;
+    background: #2b2d31;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN/FORM CARD */
+.form-login-box {
+    width: 420px;
+    background: #313338;
+    padding: 32px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+
+.form-login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* INPUT GROUP */
+.input-field {
+    margin-bottom: 16px;  /* jarak antar input */
+}
+
+.input-field label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #ddd;
+}
+
+.input-field input,
+.input-field select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background: #3a3c43;
+    color: #f2f2f2;
+    font-size: 14px;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+    border-color: #4a73ff;
+}
+
+/* SUBMIT BUTTON */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #4a73ff;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+}
+
+.btn-submit:hover {
+    background: #6389ff;
+}
+
+/* BACK LINK */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 14px;
+    color: #4a73ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
