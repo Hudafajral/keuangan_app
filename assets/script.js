@@ -1,4 +1,4 @@
-// Animasi kecil untuk tombol
+
 document.querySelectorAll(".btn, button").forEach(btn => {
     btn.addEventListener("mousedown", () => {
         btn.style.transform = "scale(0.95)";
@@ -9,9 +9,7 @@ document.querySelectorAll(".btn, button").forEach(btn => {
 });
 
 
-/* =========================
-   FILTERING TABLE
-   ========================= */
+
 const rows = document.querySelectorAll("#tabel-transaksi tr[data-jenis]");
 let activeFilter = null;
 
@@ -33,7 +31,6 @@ function clearActiveBox() {
     [boxMasuk, boxKeluar, boxReset].forEach(b => b.classList.remove("active"));
 }
 
-/* --- Klik Pendapatan (MASUK) --- */
 boxMasuk.addEventListener("click", () => {
     if (activeFilter === "masuk") {
         activeFilter = null;
@@ -47,7 +44,7 @@ boxMasuk.addEventListener("click", () => {
     }
 });
 
-/* --- Klik Pengeluaran (KELUAR) --- */
+
 boxKeluar.addEventListener("click", () => {
     if (activeFilter === "keluar") {
         activeFilter = null;
@@ -61,7 +58,6 @@ boxKeluar.addEventListener("click", () => {
     }
 });
 
-/* --- Klik Total = Reset --- */
 boxReset.addEventListener("click", () => {
     activeFilter = null;
     resetFilter();
